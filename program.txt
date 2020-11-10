@@ -1,0 +1,24 @@
+integer mainFunction()
+{
+    integer firstNumber;
+    integer secondNumber, thirdNumber;
+    integer minimum = -80;
+    readFromKeyboard >> firstNumber >> secondNumber >> thirdNumber;
+    if (firstNumber :<: secondNumber :&&: firstNumber :<: thirdNumber)
+    {
+        minimum = firstNumber;
+    }
+    else
+    {
+        if(secondNumber :<: thirdNumber)
+        {
+            minimum = secondNumber;
+        }
+        else
+        {
+            minimum = thirdNumber;
+        }
+    }
+    writeToKeyboard << "Minimum: " << minimum;
+    return 0;
+}

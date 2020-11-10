@@ -1,0 +1,29 @@
+Integer mainFunction()
+{
+	Integer listOfNumbers[1000];
+	Integer n;
+	Integer index;
+	Integer sumOfNumbers = 0;
+	
+	index = 0;
+	readFromKeyboard >> n;
+	while (index :<: n)
+	{
+		readFromKeyboard >> listOfNumbers[index];
+		index = index + 1;
+	}
+	
+	index = 0;
+	while (index :<: n)
+	{
+		if (listOfNumbers[index] % 2 :==: 0)
+		{		
+			sumOfNumbers = sumOfNumbers + listOfNumbers[index];
+		}
+		index = index + 1;
+	}
+	
+	writeToKeyboard << "Sum of even numbers: " << sumOfNumbers;
+	
+	return 0;
+}

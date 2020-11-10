@@ -1,0 +1,23 @@
+Integer mainFunction()
+{
+	Integer firstNumber;
+	Integer secondNumber;
+	
+	readFromKeyboard >> firstNumber >> secondNumber;
+	
+	while (firstNumber :!=: secondNumber)
+	{
+		if(firstNumber :>: secondNumber)
+		{
+			secondNumber = secondNumber - firstNumber;
+		}
+		else
+		{
+			firstNumber = firstNumber - secondNumber;
+		}
+	}
+	
+	writeToKeyboard << "Greatest common divisor: " << firstNumber;
+	
+	return 0;
+}
